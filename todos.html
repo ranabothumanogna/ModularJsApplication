@@ -4,16 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <title>Todos - MyApp</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="root"></div>
 
   <script type="module">
-    import { createNavbar } from './components/navbar.js';
-    import { createFooter } from './components/footer.js';
-    import { getCurrentUser, logout } from './modules/auth.js';
-    import { displayTodos } from './modules/displayTodos.js';
+    import { createNavbar } from './navbar.js';
+    import { createFooter } from './footer.js';
+    import { getCurrentUser, logout } from './auth.js';
+    import { displayTodos } from './displaytodos.js';
+
 
     const root = document.getElementById('root');
     root.appendChild(createNavbar());
